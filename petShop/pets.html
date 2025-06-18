@@ -18,9 +18,22 @@
 
     <main>
         <section class="featured">
-            <h2>All Pets</h2>
-            <div id="pet-list">
+            <div>
+                Type:
+                <input type="checkbox" id="dog" name="pet-type" value="Dog" checked>
+                <label for="dog">Dog</label>
+
+                <input type="checkbox" id="cat" name="pet-type" value="Cat" checked>
+                <label for="cat">Cat</label>
+
+                <input type="checkbox" id="capybara" name="pet-type" value="Capybara" checked>
+                <label for="capybara">Capybara</label>
+
+
+                <input type="checkbox" id="bird" name="pet-type" value="Bird" checked>
+                <label for="bird">Bird</label>
             </div>
+            <div class="pet-list" id="pet-list"></div>
         </section>
     </main>
 
@@ -36,6 +49,7 @@
         </div>
         
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
       <script src="pets.js"></script>
 </body>
