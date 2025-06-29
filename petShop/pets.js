@@ -64,4 +64,4 @@
     });
     }
 
-    $(document).ready(loadPets);    
+    $(document).ready(loadPets);

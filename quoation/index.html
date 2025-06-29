@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+    <h2>Accessory Shop</h2>
+    <button onclick="openModal()">Add Product</button>
+
+    <!-- ✅ Open section properly -->
+    <section>
+      <table border="1" id="accessoryTable" style="margin-top: 10px; width: 100%;">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>VAT (7%)</th>
+            <th>Total</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Modal -->
+    <div id="productModal" class="modal" style="display:none; position:fixed; top:20%; left:35%; background:white; padding:20px; border:2px solid black;">
+      <h3>Add Accessory</h3>
+      <label for="productSelect">Product:</label>
+      <select id="productSelect">
+        <option value="Leash" data-price="120">Leash - 120฿</option>
+        <option value="Bowl" data-price="80">Bowl - 80฿</option>
+        <option value="Toy" data-price="150">Toy - 150฿</option>
+        <option value="Bed" data-price="500">Pet Bed - 500฿</option>
+      </select>
+      <br><br>
+      <button onclick="addProduct()">Add</button>
+      <button onclick="closeModal()">Cancel</button>
+    </div>
+  </main>
+
+  <!-- ✅ JavaScript should be inside body or right before </body> -->
+  <script src="script.js"></script>
+
+</body>
+</html>
